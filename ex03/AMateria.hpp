@@ -1,6 +1,7 @@
 #ifndef FT_AMATERIA_HPP
 #define FT_AMATERIA_HPP
 
+class ICharacter;
 #include <string>
 #include "ICharacter.hpp"
 
