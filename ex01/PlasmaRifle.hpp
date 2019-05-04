@@ -15,7 +15,7 @@ public:
 	PlasmaRifle(PlasmaRifle const &rhs);
 	PlasmaRifle &operator=(PlasmaRifle const &rhs);
 
-	void PlasmaRifle::attack() const;
+	void attack() const;
 };
 
 #endif /* FT_PlasmaRifle_HPP */

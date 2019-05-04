@@ -17,6 +17,8 @@ PowerFist::PowerFist(PowerFist const &rhs)
 
 PowerFist &PowerFist::operator=(PowerFist const &rhs)
 {
+	AWeapon::operator=(rhs);
+	return *this;
 }
 
 void PowerFist::attack() const

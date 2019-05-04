@@ -14,7 +14,7 @@ public:
 	PowerFist(PowerFist const &rhs);
 	PowerFist &operator=(PowerFist const &rhs);
 
-	void PowerFist::attack() const;
+	void attack() const;
 };
 
 #endif /* FT_PowerFist_HPP */

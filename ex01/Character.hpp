@@ -16,13 +16,12 @@ private:
 
 public:
 	Character(std::string const &name);
-	~Character();
 	Character(Character const &rhs);
 	Character &operator=(Character const &rhs);
 	~Character();
 	void recoverAP();
 	void equip(AWeapon *);
-	void attack(Enemy *);
+	void attack(Enemy *&);
 	std::string toString() const;
 	std::string getName() const;
 };

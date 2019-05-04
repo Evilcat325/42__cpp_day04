@@ -17,6 +17,8 @@ PlasmaRifle::PlasmaRifle(PlasmaRifle const &rhs)
 
 PlasmaRifle &PlasmaRifle::operator=(PlasmaRifle const &rhs)
 {
+	AWeapon::operator=(rhs);
+	return *this;
 }
 
 void PlasmaRifle::attack() const

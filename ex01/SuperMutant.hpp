@@ -3,7 +3,7 @@
 
 #include <string>
 #include <iostream>
-#include "Enemy.cpp"
+#include "Enemy.hpp"
 
 class SuperMutant : virtual public Enemy
 {

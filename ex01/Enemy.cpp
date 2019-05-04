@@ -19,11 +19,17 @@ Enemy &Enemy::operator=(Enemy const &rhs)
 {
 	this->hp = rhs.hp;
 	this->type = rhs.type;
+	return *this;
+}
+
+int Enemy::getHP() const
+{
+	return hp;
 }
 
 std::string Enemy::getType() const
 {
-	return this->type;
+	return type;
 }
 
 void Enemy::takeDamage(int dmg)

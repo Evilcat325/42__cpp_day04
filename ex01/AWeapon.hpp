@@ -7,11 +7,11 @@ class AWeapon
 {
 private:
 	std::string name;
-	unsigned int apcost;
 	unsigned int damage;
+	unsigned int apcost;
 
 public:
-	AWeapon(std::string const &name, int apcost, int damage);
+	AWeapon(std::string const &name, int damage, int apcost);
 	~AWeapon();
 	AWeapon(AWeapon const &rhs);
 	AWeapon &operator=(AWeapon const &rhs);

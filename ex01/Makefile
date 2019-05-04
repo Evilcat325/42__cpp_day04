@@ -5,7 +5,7 @@ SOURCES = *.cpp
 NAME = main
 
 $(NAME): $(SOURCES)
-	$(CC) $(FLAGS) $(STD) $(SOURCES) -o $(NAME)
+	$(CC) $(FLAGS) $(STD) $(SOURCES) -g -o $(NAME)
 
 test: $(NAME)
 	@./$(NAME) | cat -e
