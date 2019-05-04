@@ -37,6 +37,7 @@ void Character::equip(AMateria *m)
 		if (materias[i] == nullptr)
 		{
 			materias[i] = m->clone();
+			return;
 		}
 }
 void Character::unequip(int idx)

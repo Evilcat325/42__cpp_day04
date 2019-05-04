@@ -1,7 +1,7 @@
 #include "Ice.hpp"
 
 Ice::Ice()
-		: AMateria("Ice")
+		: AMateria("ice")
 {
 }
 
@@ -10,7 +10,7 @@ Ice::~Ice()
 }
 
 Ice::Ice(Ice const &rhs)
-		: AMateria("Ice")
+		: AMateria("ice")
 {
 	*this = rhs;
 }
