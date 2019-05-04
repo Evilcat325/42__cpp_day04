@@ -25,3 +25,13 @@ void AMateria::use(ICharacter &)
 {
 	xp_ += 10;
 }
+
+std::string const &AMateria::getType() const
+{
+	return type;
+}
+
+unsigned int AMateria::getXP() const
+{
+	return xp_;
+}
