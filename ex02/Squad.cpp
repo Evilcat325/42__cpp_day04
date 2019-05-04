@@ -12,7 +12,7 @@ Squad::~Squad()
 {
 	for (SquadNode *prev; head != nullptr;
 			 prev = head, head = head->next, delete prev)
-		if (head->marine)
+		if (head->marine != nullptr)
 			delete head->marine;
 }
 
@@ -55,14 +55,18 @@ ISpaceMarine *Squad::getUnit(int index) const
 	return n->marine;
 }
 
-int Squad::push(ISpaceMarine *unit)
+int Squad::push(ISpaceMarine *&unit)
 {
 	if (unit == nullptr)
 		return count;
 
 	for (SquadNode *curr = head->next; curr != nullptr; curr = curr->next)
+	{
+		std::cout << curr->marine << " " << unit << std::endl;
 		if (curr->marine == unit)
 			return count;
+	}
+
 	tail->next = new SquadNode();
 	tail = tail->next;
 	tail->marine = unit;

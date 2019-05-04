@@ -24,8 +24,8 @@ public:
 	Squad &operator=(Squad const &rhs);
 
 	int getCount() const;
-	ISpaceMarine *getUnit(int) const = 0;
-	int push(ISpaceMarine *) = 0;
+	ISpaceMarine *getUnit(int) const;
+	int push(ISpaceMarine *&);
 };
 
 #endif /* FT_Squad_HPP */

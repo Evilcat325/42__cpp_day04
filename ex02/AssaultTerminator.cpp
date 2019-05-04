@@ -7,7 +7,7 @@ AssaultTerminator::AssaultTerminator()
 
 AssaultTerminator::~AssaultTerminator()
 {
-	std::cout << "I’ll be back ..." << std::endl;
+	std::cout << "I'll be back ..." << std::endl;
 }
 
 AssaultTerminator::AssaultTerminator(AssaultTerminator const &rhs)
