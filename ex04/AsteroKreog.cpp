@@ -13,7 +13,7 @@ AsteroBocal::AsteroBocal(AsteroBocal const &rhs)
 	*this = rhs;
 }
 
-AsteroBocal &AsteroBocal::operator=(AsteroBocal const &rhs)
+AsteroBocal &AsteroBocal::operator=(AsteroBocal const &)
 {
 	return *this;
 }

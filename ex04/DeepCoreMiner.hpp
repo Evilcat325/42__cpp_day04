@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "IMiningLaser.hpp"
-#include "IAsteroid.hpp"
 
 class DeepCoreMiner : virtual public IMiningLaser
 {

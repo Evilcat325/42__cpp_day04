@@ -3,6 +3,7 @@
 
 #include "IMiningLaser.hpp"
 #include "IAsteroid.hpp"
+#include <iostream>
 
 class MiningBarge
 {

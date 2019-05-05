@@ -8,9 +8,6 @@ MiningBarge::MiningBarge()
 
 MiningBarge::~MiningBarge()
 {
-	for (int i = 0; i < 4; ++i)
-		if (miners[i] != nullptr)
-			delete miners[i];
 }
 
 MiningBarge::MiningBarge(MiningBarge const &rhs)
@@ -28,7 +25,7 @@ MiningBarge &MiningBarge::operator=(MiningBarge const &rhs)
 void MiningBarge::equip(IMiningLaser *miner)
 {
 	for (int i = 0; i < 4; i++)
-		if (miners[i] != nullptr)
+		if (miners[i] == nullptr)
 		{
 			miners[i] = miner;
 			return;

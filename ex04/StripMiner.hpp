@@ -3,9 +3,8 @@
 
 #include <iostream>
 #include "IMiningLaser.hpp"
-#include "IAsteroid.hpp"
 
-class StripMiner
+class StripMiner : public IMiningLaser
 {
 private:
 	/* data */

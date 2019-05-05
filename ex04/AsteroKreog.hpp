@@ -3,8 +3,6 @@
 
 #include <string>
 #include "IAsteroid.hpp"
-#include "StripMiner.hpp"
-#include "DeepCoreMiner.hpp"
 
 class AsteroBocal : virtual public IAsteroid
 {

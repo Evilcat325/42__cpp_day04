@@ -13,7 +13,7 @@ BocalSteroid::BocalSteroid(BocalSteroid const &rhs)
 	*this = rhs;
 }
 
-BocalSteroid &BocalSteroid::operator=(BocalSteroid const &rhs)
+BocalSteroid &BocalSteroid::operator=(BocalSteroid const &)
 {
 	return *this;
 }

@@ -13,7 +13,7 @@ StripMiner::StripMiner(StripMiner const &rhs)
 	*this = rhs;
 }
 
-StripMiner &StripMiner::operator=(StripMiner const &rhs)
+StripMiner &StripMiner::operator=(StripMiner const &)
 {
 	return *this;
 }
@@ -21,5 +21,5 @@ StripMiner &StripMiner::operator=(StripMiner const &rhs)
 void StripMiner::mine(IAsteroid *asteroid)
 {
 	std::cout << "* strip mining ... got "
-						<< asteroid->beMined() << " ! *" << std::endl;
+						<< asteroid->beMined(this) << " ! *" << std::endl;
 }
